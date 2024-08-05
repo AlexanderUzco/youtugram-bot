@@ -15,8 +15,7 @@ Este bot de Telegram permite a los usuarios descargar videos y audios desde YouT
 
 ## Requisitos para Instagram
 
-> [!WARNING]
-> **Uso de la Sesión de Instagram**
+> [!WARNING] > **Uso de la Sesión de Instagram**
 > El bot utiliza la sesión de Instagram extraída de Firefox para acceder a Instagram. Ten en cuenta que Instagram puede considerar el uso de esta sesión como sospechoso, lo que podría llevar a la suspensión o bloqueo de la cuenta asociada. Por lo tanto, se recomienda utilizar una cuenta de Instagram dedicada exclusivamente para este propósito. No utilices una cuenta que uses regularmente o que no estés dispuesto a perder. Al utilizar este software, aceptas y entiendes que operas bajo tu propio riesgo y responsabilidad.
 
 Para que el bot funcione con Instagram, es necesario seguir estos pasos:
@@ -67,19 +66,19 @@ python bot.py
 
 ## 5. Usa el Bot
 
-Envía un enlace de YouTube al bot.
+Puedes comenzar buscando el bot que creaste en Telegram y comenzar con el comando /start
 
-El bot te preguntará cómo deseas descargar el contenido.
+Luego puedes enviar algun link de Youtube o Instagram
 
-Elige entre "Descargar MP3" o "Descargar Video".
+En el caso de Youtube te pedira seleccionar si deseas descargar el audio o el video
 
-# Funcionalidad de Instagram (En Desarrollo)
-
-Actualmente, la funcionalidad para descargar contenido de Instagram no está implementada. El bot solo responderá con un mensaje informativo sobre la imposibilidad de descargar contenido de Instagram.
+En el caso de Instagram de Descargara el contenido del la url que le envies
 
 # Estructura del Proyecto
 
 1. bot.py: Archivo principal que contiene la lógica del bot.
 2. src/youtube_utils.py: Contiene la clase YoutubeUtils para manejar la descarga de videos y audios desde YouTube.
-3. .env: Archivo para almacenar el token de Telegram.
-4. requirements.txt: Lista de dependencias del proyecto.
+3. src/instagram_utils.py: Contiene la clase InstagramUtils para manejar las descarga del contenido de Instagram
+4. scripts/cookies_instagram_firefox.py: Script utilizado para almacenar la session de instagram en el navegador Firefox
+5. .env: Archivo para almacenar el token de Telegram.
+6. requirements.txt: Lista de dependencias del proyecto.
