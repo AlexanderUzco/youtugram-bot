@@ -27,7 +27,7 @@ Crea un archivo .env en la raíz del proyecto y agrega tu token de Telegram:
 TELEGRAM_TOKEN=tu_token_de_telegram
 ```
 
-### Para configurar el bot de Telegran puedes seguir la siguiente guia: [Chatbot Telegram](https://sendpulse.com/latam/knowledge-base/chatbot/telegram/create-telegram-chatbot):
+### Para configurar el bot de Telegran puedes seguir la siguiente guia: [Chatbot Telegram](https://sendpulse.com/latam/knowledge-base/chatbot/telegram/create-telegram-chatbot)
 
 ## 3. Instala las Dependencias
 
