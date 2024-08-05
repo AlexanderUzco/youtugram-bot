@@ -15,7 +15,8 @@ Este bot de Telegram permite a los usuarios descargar videos y audios desde YouT
 
 ## Requisitos para Instagram
 
-> [!WARNING] > **Uso de la Sesión de Instagram**
+> [!WARNING]
+> **Uso de la Sesión de Instagram**
 > El bot utiliza la sesión de Instagram extraída de Firefox para acceder a Instagram. Ten en cuenta que Instagram puede considerar el uso de esta sesión como sospechoso, lo que podría llevar a la suspensión o bloqueo de la cuenta asociada. Por lo tanto, se recomienda utilizar una cuenta de Instagram dedicada exclusivamente para este propósito. No utilices una cuenta que uses regularmente o que no estés dispuesto a perder. Al utilizar este software, aceptas y entiendes que operas bajo tu propio riesgo y responsabilidad.
 
 Para que el bot funcione con Instagram, es necesario seguir estos pasos:
