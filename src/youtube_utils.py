@@ -1,10 +1,12 @@
 """Youtube Utils"""
 
 import os
+import re
 
 import pytubefix
 from pytubefix import YouTube
 from telebot import TeleBot, types
+from telebot.types import Message
 
 
 class YoutubeUtils:
@@ -13,6 +15,11 @@ class YoutubeUtils:
     def __init__(self, user_data, bot: TeleBot):
         self.user_data = user_data
         self.bot = bot
+
+    def is_youtube(self, url: str) -> bool:
+        """Check if a youtube link"""
+        youtube_regex = r"(https?://)?(www\.)?(youtube\.com/watch\?v=|youtu\.be/)"
+        return re.match(youtube_regex, url) is not None
 
     def handle_audio(self, user_id):
         """Handler Audio Case"""
@@ -70,7 +77,7 @@ class YoutubeUtils:
                 user_id, f"Error al procesar el enlace de YouTube: {str(e)}"
             )
 
-    def handle_resolution_selection(self, message):
+    def handle_resolution_selection(self, message: Message):
         """Handles the resolution selection by the user."""
         user_id = message.chat.id
         resolution_text = message.text
